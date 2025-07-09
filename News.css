@@ -1,0 +1,263 @@
+/* ✅ News Hero Section Background */
+.news-hero-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 75vh;
+  width: 100%;
+  background: url('/public/Images/10001.jpg') center center/cover no-repeat;
+}
+
+/* ✅ Navbar, Hero Text */
+.news-hero-banner .hero-text h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+.news-hero-banner .hero-text p {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.news-hero-banner .colorlib {
+  color: #ece9e9;
+  font-weight: bold;
+}
+
+/* ✅ Menu Overlay */
+.news-hero-banner .menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.news-hero-banner .menu-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.news-hero-banner .menu-links li {
+  font-size: 39px;
+  margin: 15px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.news-hero-banner .active-link {
+  color: rgb(82, 183, 194);
+  font-weight: bold;
+}
+
+/* ✅ Page Container */
+.news-page-container {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* ✅ Unified Grid Section */
+.news-cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Consistent horizontal & vertical spacing */
+  padding: 30px 0; /* Top-bottom spacing only */
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 1200px; /* Keeps content centered & aligned */
+}
+
+/* ✅ Standard Card Style */
+.news-card, .search-card, .popular-post-card, .categories-card {
+  width: 350px;  /* ✅ Uniform width for all cards */
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  margin: 0; /* ✅ Remove inconsistent margins */
+}
+
+/* ✅ Blog Card Image */
+.news-card-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* ✅ Blog Card Text */
+.news-card-text {
+  padding: 15px 20px;
+}
+
+.news-card-date {
+  font-size: 14px;
+  color: #999999;
+  margin-bottom: 5px;
+}
+
+.news-card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+   transition: color 0.3s ease;  /* Smooth color transition */
+  cursor: pointer;
+}
+.news-card-title:hover {
+  color: #5bc0be;  /* Light blue on hover */
+}
+
+/* ✅ Search Card */
+.search-card {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+}
+
+.search-card-content {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 4px;
+  border: 2px solid #cccccc;
+  width: 100%;
+}
+
+.search-icon {
+  font-size: 15px;
+  color: #666;
+  margin-right: 8px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  width: 100%;
+}
+
+/* ✅ Popular Post Card */
+.popular-post-card {
+  padding: 20px;
+  height: 80vh;
+  margin-top:-250px /* Let content decide height */
+}
+
+.popular-post-heading {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.popular-post-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.popular-post-image {
+  width: 90px;
+  height: 70px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.popular-post-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+}
+
+.popular-post-date {
+  font-size: 12px;
+  color: #999;
+}
+
+/* ✅ Categories Card */
+.categories-card {
+  padding: 20px;
+  height:30vh;
+}
+
+.categories-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.categories-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.categories-list li:last-child {
+  border-bottom: none;
+}
+
+.category-name {
+  color: #5bc0be;
+  font-size: 15px;
+}
+
+.category-count {
+  color: #999;
+  font-size: 14px;
+  text-align: left;
+}
+
+
+.pagination-section {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  gap: 20px;            /* Space between circles */
+  margin-top: 30px;     /* Space from cards above */
+  margin-bottom: 50px;
+  padding-left: 200px;  /* Optional bottom spacing */
+}
+
+.pagination-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #5bc0be;           /* Light blue text */
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.pagination-circle.active {
+  background-color: #5bc0be; /* Filled circle */
+  color: #fff;               /* White text */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.news-section-spacer {
+  height: 130px;  /* You can adjust to 60px, 80px etc. if you need more space */
+}

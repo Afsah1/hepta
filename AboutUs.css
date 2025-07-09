@@ -1,0 +1,304 @@
+/* ✅ About Us Hero Section Background */
+.hero-container.aboutus-hero-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 75vh;
+  width: 100%;
+  background: url('/public/Images/10010.jpg') center center/cover no-repeat;
+}
+
+/* ✅ Navbar, Hero Text, and Reusable Styles for About Us */
+
+.aboutus-hero-container .hero-text h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+.aboutus-hero-container .hero-text p {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.aboutus-hero-container .colorlib {
+  color: #ece9e9;
+  font-weight: bold;
+}
+
+/* ✅ Menu Overlay Styles (Same for All Pages) */
+
+.aboutus-hero-container .menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.aboutus-hero-container .menu-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.aboutus-hero-container .menu-links li {
+  font-size: 39px;
+  margin: 15px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.aboutus-hero-container .active-link {
+  color: rgb(82, 183, 194);
+  font-weight: bold;
+}
+
+/* ✅ Page Container */
+.aboutus-page-container {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+.AboutUs-page-container {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+/* Optional: Add smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+
+.aboutus-info-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 40px;
+  background-color: #ffffff;
+  gap: 35px; 
+  margin-top: -80px;
+}
+
+.aboutus-info-image {
+  flex: 1 1 500px;
+  padding: 20px;
+}
+
+.aboutus-info-image img {
+  width: 550px;
+  height: 80vh;
+  object-fit: cover;
+  padding-left:100px;
+}
+
+.aboutus-info-text {
+  flex: 1 1 500px;
+  padding: 20px;
+  padding-right: 160px;
+}
+
+.aboutus-info-text h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #121212;
+  padding-right:90px;
+}
+
+.aboutus-info-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+.aboutus-learn-more-button {
+  padding: 12px 30px;
+  background-color: #ffffff;
+  color: rgb(18, 18, 18);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+   border: 2px solid #52b7c2;
+}
+
+.aboutus-learn-more-button:hover {
+  background-color: #5bc0be; 
+}
+
+
+.aboutus-hotel-gallery {
+  text-align: center;
+  padding: 60px 40px;
+  background-color: #ffffff;
+}
+
+.aboutus-hotel-gallery h2 {
+  font-size: 70px;
+  font-weight: 1000;
+  color: #121212;
+  margin-bottom: 20px;
+}
+
+.aboutus-hotel-gallery p {
+  font-size: 16px;
+  color: #757575;
+  max-width: 800px;
+  margin: 0 auto;   /* ✅ Center paragraph */
+  line-height: 2.0;
+  padding: 0px 380px;
+}
+
+
+
+/* ✅ About Us Carousel Section (No background) */
+.aboutus-carousel-section {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #ffffff;  /* Plain white background, no slope */
+}
+
+.aboutus-carousel-container {
+  position: relative;
+  display: inline-block;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.aboutus-carousel-image {
+  width: 100%;
+  height: 680px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Arrows */
+.aboutus-carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: none;
+  font-size: 40px;
+  padding: 10px 20px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 3;
+}
+
+.aboutus-carousel-arrow.left {
+  left: -80px;
+}
+
+.aboutus-carousel-arrow.right {
+  right: -80px;
+}
+
+/* Dots */
+.aboutus-carousel-dots-wrapper {
+  margin-top: 15px;
+}
+
+.aboutus-carousel-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutus-carousel-dots .dot {
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.aboutus-carousel-dots .active-dot {
+  background-color: #333;
+}
+
+
+/* ✅ Team Section */
+.aboutus-team-section {
+  text-align: center;
+  padding: 60px 20px 60px 20px;
+  background-color: #ffffff;
+}
+
+.aboutus-team-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #121212;
+}
+
+.aboutus-team-section p {
+  font-size: 16px;
+  color: #767575;
+  max-width: 800px;
+  margin: 0 auto;
+  padding:0px 400px;
+  line-height: 1.8;
+}
+
+/* ✅ Team Cards Section */
+.aboutus-team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px 80px 20px;
+  background-color: #ffffff;
+}
+
+.team-card {
+  background-color: #ffffff;
+  width: 350px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.team-card-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+.team-card-text {
+  padding: 20px;
+}
+
+/* 🔷 Heading: Light */
+.team-card-text h4 {
+  font-size: 18px;
+  color: #c3c1c1;   /* lighter gray */
+  margin-bottom: 5px;
+  font-weight: 400;  /* lighter font */
+}
+
+/* 🔷 Name: Bold & Dark */
+.team-card-text p {
+  font-size: 24px;
+  color: #222222;    /* darker */
+  font-weight: bold;  /* bold */
+}

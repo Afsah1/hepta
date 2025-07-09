@@ -1,0 +1,253 @@
+/* ✅ Contact Hero Section Background */
+.contact-hero-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 75vh;
+  width: 100%;
+  background: url('/public/Images/10011.jpg') center center/cover no-repeat;  /* ✅ Change to your contact image */
+}
+
+/* ✅ Navbar, Hero Text, and Reusable Styles for Contact */
+.contact-hero-banner .hero-text h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+.contact-hero-banner .hero-text p {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.contact-hero-banner .colorlib {
+  color: #ece9e9;
+  font-weight: bold;
+}
+
+/* ✅ Menu Overlay */
+.contact-hero-banner .menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.contact-hero-banner .menu-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.contact-hero-banner .menu-links li {
+  font-size: 39px;
+  margin: 15px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-hero-banner .active-link {
+  color: rgb(82, 183, 194);
+  font-weight: bold;
+}
+
+/* ✅ Page Container */
+.contact-page-container {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* ✅ Contact Content Section */
+.contact-content-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 80px 20px;
+  flex-wrap: wrap;
+ 
+}
+
+/* Contact Form Card */
+.contact-form-card {
+  width: 550px;              
+  min-height: 550px;         
+  background: #fff;
+  padding: 40px 60px;        
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  border-radius: 5px;
+}
+
+.contact-form-card form {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  gap: 50px;               
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  font-size: 17px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  min-height: 30px;
+  font-size: 15px;
+}
+
+.form-group textarea {
+  min-height: 200px;      
+  resize: none;
+}
+
+
+.send-message-button {
+  padding: 12px 25px;       
+  border: 1px solid #5bc0be;
+  background: transparent;
+  color: #333;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 15px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.send-message-button:hover {
+  background: #5bc0be;
+  color: #fff;
+}
+
+/*Contact Info Card */
+.contact-info-card {
+  max-width: 400px;         
+  padding-top: 20px;       
+}
+
+.info-label {
+  color: #5bc0be;
+  text-transform: uppercase;
+  font-size: 18px;          
+  margin-top: 30px;        
+  margin-bottom: 10px;
+}
+
+.info-text {
+  font-size: 26px;        
+  font-weight: bold;
+  line-height: 1.7;         
+  color: #000;
+}
+
+/*Overall Section Layout */
+.contact-content-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;             
+  padding: 100px 40px;     
+  flex-wrap: wrap;
+}
+
+
+/* 🔷 Section Container */
+.news-customers-section {
+  padding: 60px 40px;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* 🔷 Heading */
+.news-customers-heading {
+  font-size: 55px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 50px;
+}
+
+/* 🔷 Testimonials Flexbox */
+.news-testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* 🔷 Each Testimonial Card */
+.news-testimonial-card {
+  width: 350px;
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 5px;
+  position: relative;
+  text-align: left;
+}
+
+/* 🔷 Circular Image Top Right */
+.news-testimonial-image {
+  position: relative;         /* Remove absolute positioning */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #fff;
+  margin-bottom: 15px;         /* Space below the image */
+}
+
+.news-testimonial-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 🔷 Testimonial Text */
+.news-testimonial-text {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #141414;
+  margin-top: 20px;  /* Space for the image */
+  margin-bottom: 20px;
+  padding-right: 20px;
+  font-style: italic; 
+}
+
+/* 🔷 Author Name */
+.news-testimonial-author {
+  font-size: 17px;
+  color: #666;
+  font-style: italic; 
+  
+}

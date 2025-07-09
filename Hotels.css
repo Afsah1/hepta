@@ -1,0 +1,486 @@
+.hero-container.hotels-hero-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 75vh;
+  width: 100%;
+  background: url('/public/Images/10012.jpg') center center/cover no-repeat;
+}
+
+/* Navbar, Menu, Hero Text - Reused Styles */
+
+.hero-text h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+.hero-text p {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.colorlib {
+  color: #ece9e9;
+  font-weight: bold;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.menu-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-links li {
+  font-size: 39px;
+  margin: 15px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.active-link {
+  color: rgb(82, 183, 194);
+  font-weight: bold;
+}
+.hotels-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 40px 20px;
+  margin-top: -150px;
+}
+
+.hotels-experience-card {
+  background-color: #ffffff;
+  padding: 70px 20px;
+  width: 280px;
+  text-align: center;
+}
+
+.hotels-card-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.hotels-card-title {
+  font-size: 27px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hotels-card-text {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+
+
+.hotels-page-container {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+/* Optional: Add smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+.family-room-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 0;
+}
+
+.family-room-image {
+  padding-left: 0;
+}
+
+.family-room-image img {
+  width: 550px;
+  height: 80vh;
+  object-fit: cover;
+  padding-left:60px;
+}
+
+.family-room-content {
+  flex: 1;
+  padding: 20px 40px;
+  text-align: left;
+}
+
+.family-room-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #121212;
+}
+
+.family-room-content p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 2.0;
+  padding-right: 60px;
+}
+
+.family-room-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #0d0d0e;
+  border: 2px solid #52b7c2;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.family-room-button:hover {
+  background-color: #409ca8;
+  color: #ffffff;
+}
+
+/* ====== Presidential Room Section ====== */
+.presidential-room-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 0;
+}
+
+.presidential-room-image img {
+  width: 550px;
+  height: 80vh;
+  object-fit: cover;
+  padding-right: 40px;
+}
+
+.presidential-room-content {
+  flex: 1;
+  padding: 20px 40px;
+  text-align: left;
+}
+
+.presidential-room-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #121212;
+  padding-left: 75px;
+}
+
+.presidential-room-content p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 2.0;
+  padding-right: 75px;
+  padding-left: 75px;
+}
+
+.presidential-room-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #020202;
+  border: 2px solid #52b7c2;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 75px;
+}
+
+.presidential-room-button:hover {
+  background-color: #52b7c2;
+  color: #ffffff;
+}
+
+
+.hotel-gallery-section {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hotel-gallery-section h2 {
+  font-size: 65px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #121212;
+}
+
+.hotel-gallery-section p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.8;
+   padding: 0 100px;
+}
+
+
+
+/* ✅ Hotel Carousel Section */
+
+.hotel-carousel-section {
+  text-align: center;
+  padding: 0;
+  background-color: #fff;
+  position: relative;
+  margin-top: 0;
+  overflow: hidden;
+}
+
+/* 🔵 Solid Background Covering Entire Section */
+.hotel-carousel-background {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background: #d8d8d7;  /* Solid blue background */
+  z-index: 1;
+}
+
+.hotel-carousel-container {
+  position: relative;
+  display: inline-block;
+  max-width: 1100px;
+  width: 100%;
+  z-index: 2;
+}
+
+.hotel-carousel-image {
+  width: 100%;
+  height: 730px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hotel-carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: none;
+  font-size: 40px;
+  padding: 10px 20px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 3;
+}
+
+.hotel-carousel-left {
+  left: -100px;
+}
+
+.hotel-carousel-right {
+  right: -100px;
+}
+
+.hotel-carousel-dots-wrapper {
+  margin-top: 10px;
+}
+
+.hotel-carousel-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hotel-dot {
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  background-color: #0a0a0a;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hotel-active-dot {
+  background-color: #333;
+}
+
+
+.more-features-section {
+  background-color: #d8d8d7;   /* Optional: choose any background */
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.more-features-title {
+  font-size: 45px;
+  font-weight: bold;
+  color: #121212;
+  margin-bottom: 20px;
+}
+
+.more-features-description {
+  font-size: 18px;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  padding:0px 400px;
+}
+
+
+.villa-reasons-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 20px;
+  background-color: #d8d8d7;
+}
+
+.villa-card {
+  background-color: #f7f7f7;
+  width: 350px;
+  overflow: hidden;  /* Ensures image corners don't overflow */
+  text-align: left;
+}
+
+.villa-card-image-top {
+  width: 100%;
+  height: 270px;   /* Adjust height as needed */
+  object-fit: cover;
+  display: block;
+}
+
+.villa-card-title-bottom {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0a0a0a;
+  padding: 15px;
+  margin: 0;
+  height: 70px;
+}
+
+.footer {
+  background-color: #313030;
+  color: #ffffff;
+  padding: 60px 20px 30px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto 30px auto;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  margin: 10px 20px;
+}
+
+.footer-heading {
+    color:white;
+  font-size: 25px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-links li {
+  list-style: none;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.footer-links li:hover {
+  color: #cccccc;
+}
+
+.footer-subscribe {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.footer-input {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  background-color: #313030; /* ✅ Blackish background for email */
+  color: #fff;
+}
+
+.footer-input::placeholder {
+  color: #aaa;
+}
+
+.footer-submit-button {
+  background-color: #313030;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.footer-submit-button i {
+  font-size: 16px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.white-heart {
+  color: #ffffff;
+}
+
+.footer-icons i {
+  font-size: 20px;
+  margin: 0 8px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-icons i:hover {
+  color: #52b7c2;
+}
+
+.hotel-section-spacer {
+  height: 130px; 
+  background-color:  #d8d8d7;  /* You can adjust to 60px, 80px etc. if you need more space */
+}
